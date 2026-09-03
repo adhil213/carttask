@@ -3,6 +3,7 @@ import { useProductFilters } from './hooks/useProductFilters'
 import { ProductGrid } from './components/ProductGrid'
 import { SearchFilters } from './components/SearchFilters'
 import { Cart } from './components/Cart'
+import { Checkout } from './components/Checkout'
 function App() {
   const { data, isPending, error } = useProducts()
 
@@ -53,6 +54,8 @@ function App() {
       <ProductGrid products={filteredProducts} />
       <h1>------------------------------------------</h1>
       <Cart/>
+      <h1>------------------------------------------</h1>
+      <Checkout />
     </main>
   )
 }
