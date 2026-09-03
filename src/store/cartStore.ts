@@ -84,7 +84,7 @@ export const useCartStore = create<CartState>()(
       },
     }),
     {
-      name: 'shopping-cart',
+      name: 'codenzicShop',
     },
   ),
 )
